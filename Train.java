@@ -4,6 +4,55 @@ public class Train {
     short timestartm, timestarth, timeendm, timeendh;
 
 
+    public String getPunktNazn() {
+        return PunktNazn;
+    }
+
+    public int getTrain_num() {
+        return train_num;
+    }
+
+    public int getNum_of_all_places() {
+        return num_of_all_places;
+    }
+
+    public int getNum_of_coupe() {
+        return num_of_coupe;
+    }
+
+    public int getNum_of_plackart() {
+        return num_of_plackart;
+    }
+
+    public short getTimestartm() {
+        return timestartm;
+    }
+
+    public short getTimestarth() {
+        return timestarth;
+    }
+
+    public short getTimeendm() {
+        return timeendm;
+    }
+
+    public short getTimeendh() {
+        return timeendh;
+    }
+
+    /*Инициализирующий конструктор без параметров */
+    public Train() {
+        this.PunktNazn = "";
+        this.train_num = 0;
+        this.num_of_all_places = 0;
+        this.num_of_coupe = 0;
+        this.num_of_plackart = 0;
+        this.timestartm = 0;
+        this.timestarth = 0;
+        this.timeendm = 0;
+        this.timeendh = 0;
+    }
+
     @Override
     public String toString() {
         return "Train{" +

@@ -3,10 +3,18 @@ public class Triangle {
     private double sideB;
     private double sideC;
 
+    /* Конструктор с параметрами */
     public Triangle(double sideA, double sideB, double sideC) {
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
+    }
+
+    /* Конструктор без параметров*/
+    public Triangle() {
+        this.sideA = 0;
+        this.sideB = 0;
+        this.sideC = 0;
     }
 
     public double getSideA() {
@@ -17,8 +25,29 @@ public class Triangle {
         return sideB;
     }
 
+    @Override
+    public String toString() {
+        return "Triangle{" +
+                "sideA=" + sideA +
+                ", sideB=" + sideB +
+                ", sideC=" + sideC +
+                '}';
+    }
+
     public double getSideC() {
         return sideC;
+    }
+
+    public void setSideA(double sideA) {
+        this.sideA = sideA;
+    }
+
+    public void setSideB(double sideB) {
+        this.sideB = sideB;
+    }
+
+    public void setSideC(double sideC) {
+        this.sideC = sideC;
     }
 
     public double calculatePerimeter() {
